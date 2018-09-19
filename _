@@ -1,0 +1,76 @@
+/*
+
+Name: Josh Heyer
+Course: CSCI 2240-003
+Assign: Program #2
+
+Program Description: This program takes an NxN matrix of letters and searches
+for the words hidden within. It then outputs the NxN matrix but only the
+key words that it searched for and found.
+
+*/
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+char file_in[50][50];
+int num_of_words;
+char file [5][5] =  {{'C', 'A', 'T', 'B', 'U'},
+                    {'O', 'G', 'O', 'D', 'E'},
+                    {'S', 'F', 'I', 'Q', 'N'},
+                    {'T', 'R', 'F', 'P', 'O'},
+                    {'S', 'L', 'N', 'V', 'D'}};
+
+char word1[3] = "CAT";
+char word2[5] = "COSTS";
+char word3[4] = "DONE";
+char word4[3] = "OFF";
+char word5[3] = "TBU";
+
+int w = 0, x = 0, y = 0, z = 0, N = 0;
+
+void search_horizontal () {
+
+    for (x = 0; x < 5; x++) {
+        for (y = 0; y < 5; y++) {
+            for (z = 0; z < sizeof(word1); z++) {
+
+
+
+            
+
+}
+
+int main () {
+
+    while (x < 100) {
+
+            if (file_in[w][x+1] == '\n') {
+                N = x;
+                w++;
+                x = 0;
+            }
+            if (!isspace(file_in[w][x])) {
+                printf ("x = %d\n", x);
+                scanf ("%c", &file_in[w][x]);
+                x++;
+            }
+            if (w > N) {
+                break;
+            }
+    }
+printf ("N = %d\n", N); 
+    for (y = 0; y < N; y++) {
+        printf ("\n");
+        for (z = 0; z < N; z++) {
+
+           /* if (file_in[y][z] != 0) {*/
+            
+                printf ("%c ", file_in[y][z]);
+           /* }*/
+        }
+    }
+    return 0;
+}
